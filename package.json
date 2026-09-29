@@ -1,0 +1,12 @@
+{
+  "name": "beer-game",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Take-home task: a small multiplayer supply-chain game.",
+  "scripts": {
+    "dev": "concurrently -k -n \"server,client\" -c \"blue,green\" \"npx tsx watch src/server/index.ts\" \"vite\"",
+    "build": "vite build && tsc -p tsconfig.server.json",
+    "start": "node dist-server/server/index.js",
+    "test": "vitest run"
+  }
+}

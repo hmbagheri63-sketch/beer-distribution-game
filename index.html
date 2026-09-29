@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beer Distribution Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      * { box-sizing: border-box; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+      body { margin: 0; background: #f8fafc; color: #0f172a; min-height: 100vh; }
+      #root { width: 100%; max-width: 1080px; margin: 0 auto; padding: 32px 20px; }
+      button { cursor: pointer; border-radius: 10px; border: none; font-weight: 600; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+      button:active { transform: scale(0.98); }
+      input { border-radius: 10px; border: 1.5px solid #cbd5e1; background: #ffffff; color: #0f172a; outline: none; transition: border-color 0.2s; }
+      input:focus { border-color: #2563eb; ring: 2px solid #93c5fd; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/client/main.tsx"></script>
+  </body>
+</html>
